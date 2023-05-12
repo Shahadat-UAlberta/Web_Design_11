@@ -1,0 +1,188 @@
+
+/*Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Bebas+Neue&display=swap');
+
+/* My Fonts */
+@font-face{
+	src: url('font/Lato-Regular.ttf');
+	font-family: 'lato';
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'lato' ;
+}
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.banner{
+	background: url('images/3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	text-align: center;
+}
+.banner-overlay{
+	background: rgba(0, 0, 0, .5);
+	padding: 260px 0;
+}
+
+.banner	h1{
+	color: #fff;
+	margin-bottom: 15px;
+}
+.banner p{
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 35px;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.banner > .banner-overlay > a{
+	color: #fff;
+	background: #e74c3c;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.banner > .banner-overlay > a:hover {
+	border-radius: 30px;
+}
+
+.banner ul{
+	padding: 25px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	list-style: none;
+}
+.banner ul li{
+	padding: 0 10px;
+}
+
+.banner ul li a i{
+	color: #fff;
+	font-size: 20px;
+}
+.box-1{
+	width: 500px;
+	height: 300px;
+	background: -o-linear-gradient( 50deg, red, green);
+	background: linear-gradient( 40deg, red, green);
+	margin: 100px auto;
+}
+.box-2{
+	width: 250px;
+	height: 250px;
+	background: #0783f0;
+	margin: 0 auto 100px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+.box-2:hover{
+	-webkit-transform: rotate(115deg);
+	    -ms-transform: rotate(115deg);
+	        transform: rotate(115deg);
+	border-radius: 50%;
+}
+.box-3{
+	width: 25%;
+	margin: 0 auto 100px;
+}
+.box-3 img{
+	-webkit-transition: .6s;
+	-o-transition: .6s;
+	transition: .6s;
+}
+.box-3:hover img{
+	-webkit-transform: translate(50px, 70px);
+	    -ms-transform: translate(50px, 70px);
+	        transform: translate(50px, 70px);
+}
+.shobuj{
+	background: green;
+	height: 350px;
+	width: 600px;
+	margin: 0 auto 100px;
+	position: relative;
+}
+.lal{
+	background: red;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.profile{
+	width: 30%;
+	margin: 0 auto 100px;
+	position: relative;
+	overflow: hidden;
+}
+.profile-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 100%;
+	-webkit-transition: .6s;
+	-o-transition: .6s;
+	transition: .6s;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.profile-overlay button{
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 10px 30px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+.profile-overlay button:hover{
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+}
+
+.profile-overlay button:hover i{
+	color: #0928ed;
+}
+
+
+.profile:hover .profile-overlay{
+	left: 0;
+
+}
